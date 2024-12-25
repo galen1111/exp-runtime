@@ -1,25 +1,25 @@
 # 1. open [launchpad](http://localhost:3000/)
 
 1. click the button, start the deposit process  
-<img src="doc/deposit/images/image-0.png"  style="zoom: 10%;" />
+<img src="images/image-0.png"  style="zoom: 10%;" />
 
 2. read the deposit notice
-<img src="doc/deposit/images/image-1.png"  style="zoom: 10%;" />
+<img src="images/image-1.png"  style="zoom: 10%;" />
 
 3. select cl client, need to use geth
-<img src="doc/deposit/images/image-2.png"  style="zoom: 10%;" />
+<img src="images/image-2.png"  style="zoom: 10%;" />
 
 4. click continue
-<img src="doc/deposit/images/image-3.png"  style="zoom: 10%;" />
+<img src="images/image-3.png"  style="zoom: 10%;" />
 
 5. select el client, need to use lighthouse
-<img src="doc/deposit/images/image-4.png"  style="zoom: 10%;" />
+<img src="images/image-4.png"  style="zoom: 10%;" />
 
 6. click continue
-<img src="doc/deposit/images/image-5.png"  style="zoom: 10%;" />
+<img src="images/image-5.png"  style="zoom: 10%;" />
 
 7. download [deposit cli](https://github.com/ethereum/staking-deposit-cli/releases)
-<img src="doc/deposit/images/image-6.png"  style="zoom: 10%;" />
+<img src="images/image-6.png"  style="zoom: 10%;" />
 
 # 2. generate deposit data
 1. run cli 
@@ -27,37 +27,37 @@
 deposit new-mnemonic --num_validators 1
 ```
 2. select the language you can understand
-<img src="doc/deposit/images/image-7.png"  style="zoom: 30%;" />
+<img src="images/image-7.png"  style="zoom: 30%;" />
 
 3. select the mnemonic language
-<img src="doc/deposit/images/image-8.png"  style="zoom: 30%;" />
+<img src="images/image-8.png"  style="zoom: 30%;" />
 
 4. select the network, only can select mainnet
-<img src="doc/deposit/images/image-9.png"  style="zoom: 30%;" />
+<img src="images/image-9.png"  style="zoom: 30%;" />
 
 5. input the password for creating keystore
-<img src="doc/deposit/images/image-10.png"  style="zoom: 30%;" />
+<img src="images/image-10.png"  style="zoom: 30%;" />
 
 6. input the password for creating keystore again
-<img src="doc/deposit/images/image-11.png"  style="zoom: 30%;" />
+<img src="images/image-11.png"  style="zoom: 30%;" />
 
 7. save your mnemonic
-<img src="doc/deposit/images/image-12.png"  style="zoom: 30%;" />
+<img src="images/image-12.png"  style="zoom: 30%;" />
 
 8. input your mnemonic again
-<img src="doc/deposit/images/image-13.png"  style="zoom: 30%;" />
+<img src="images/image-13.png"  style="zoom: 30%;" />
 
 9. check the deposit data file
-<img src="doc/deposit/images/image-14.png"  style="zoom: 30%;" />
+<img src="images/image-14.png"  style="zoom: 30%;" />
 
 10. upload the deposit data file to the launchpad
-<img src="doc/deposit/images/image-15.png"  style="zoom: 10%;" />
+<img src="images/image-15.png"  style="zoom: 10%;" />
 
 11. connect metamask
-<img src="doc/deposit/images/image-16.png"  style="zoom: 10%;" />
+<img src="images/image-16.png"  style="zoom: 10%;" />
 
 12. deposit
-<img src="doc/deposit/images/image-17.png"  style="zoom: 10%;" />
+<img src="images/image-17.png"  style="zoom: 10%;" />
 
 # 3. 启动节点
 1.run node
