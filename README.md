@@ -59,7 +59,7 @@ deposit new-mnemonic --num_validators 1
 12. deposit
 <img src="doc/deposit/images/image-17.png"  style="zoom: 10%;" />
 
-# 3. 启动节点
+# 3. start the node
 1.run node
 ```
 export EXP_NODE_DATA_DIR="${PWD}/data"
@@ -82,3 +82,16 @@ ${PWD}/exp-c-client validator_manager import --keystore-file=keystore-m_12381_36
 ```
 ${PWD}/exp-c-client validator_manager list --vc-token=${EXP_NODE_DATA_DIR}/cl/vc/validators/api-token.txt --vc-url=http://127.0.0.1:5062
 ```
+
+# 4. exit validator
+```
+${PWD}/exp-c-client account validator exit --testnet-dir=${EXP_NODE_DATA_DIR}/genesis --datadir=${EXP_NODE_DATA_DIR}/cl/vc --keystore=keystore-m_12381_3600_0_0_0-1735093940.json --beacon-node=http://127.0.0.1:5052
+```
+1. input the password of keystore file
+<img src="doc/deposit/images/image-18.png"  style="zoom: 20%;" />
+
+2. input 'Exit my validator'
+<img src="doc/deposit/images/image-19.png"  style="zoom: 15%;" />
+
+3. wait for exit
+<img src="doc/deposit/images/image-20.png"  style="zoom: 10%;" />
