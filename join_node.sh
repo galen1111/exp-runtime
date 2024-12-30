@@ -136,9 +136,9 @@ cmd="nohup ${EXP_NODE_BIN_E_CLIENT} \
     --discovery.port=30303 \
     --discovery.v5 \
     --http --http.addr=0.0.0.0 --http.port=8545 --http.vhosts='*' --http.corsdomain='*' \
-    --http.api='admin,debug,eth,net,txpool,web3,rpc' \
+    --http.api='eth,txpool,web3' \
     --ws --ws.addr=0.0.0.0 --ws.port=8546 --ws.origins='*' \
-    --ws.api='admin,debug,eth,net,txpool,web3,rpc' \
+    --ws.api='eth,txpool,web3' \
     --authrpc.addr=127.0.0.1 --authrpc.port=8551 \
     --authrpc.jwtsecret=${EXP_NODE_DATA_DIR}/auth.jwt \
     --metrics \
