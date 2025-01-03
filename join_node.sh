@@ -108,7 +108,7 @@ echo "scd sync, wait 60 seconds.."; sleep 60
 ############################################
 ############################################
 
-if [ ! -d ${EXP_NODE_DATA_DIR}/el/logs ]; then
+if [ ! -d ${EXP_NODE_DATA_DIR}/el/logs ] || [ "$1" == 'reinit' ]; then
     mkdir -p ${EXP_NODE_DATA_DIR}/el/logs || exit 1
     $EXP_NODE_BIN_E_CLIENT init --datadir=${EXP_NODE_DATA_DIR}/el --state.scheme=hash \
         ${EXP_NODE_DATA_DIR}/genesis/genesis.json >${EXP_NODE_DATA_DIR}/el/logs/el.log 2>&1 || exit 1
@@ -136,9 +136,9 @@ cmd="nohup ${EXP_NODE_BIN_E_CLIENT} \
     --discovery.port=30303 \
     --discovery.v5 \
     --http --http.addr=0.0.0.0 --http.port=8545 --http.vhosts='*' --http.corsdomain='*' \
-    --http.api='eth,txpool,web3' \
+    --http.api='eth,net,txpool,web3' \
     --ws --ws.addr=0.0.0.0 --ws.port=8546 --ws.origins='*' \
-    --ws.api='eth,txpool,web3' \
+    --ws.api='eth,net,txpool,web3' \
     --authrpc.addr=127.0.0.1 --authrpc.port=8551 \
     --authrpc.jwtsecret=${EXP_NODE_DATA_DIR}/auth.jwt \
     --metrics \
